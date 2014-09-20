@@ -7,10 +7,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+        $(document).ready(function() {
+            var x = document.getElementById("navbar").offsetWidth
+            $("#vision").css("width", x + " px");
+        });
+        
+        $( window ).resize(function() {
+        var x = document.getElementById("navbar").offsetWidth
+            $("#vision").css("width", x + " px");
+});
+    </script>
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" style="height:60px; padding-top:10px;">
-      <div class="container">
+      <div id="navbar" class="container" style="width:94%;">
         <div class="navbar-header">
           <a href="" class="navbar-brand"><div class="round"><img src="img/Icon-60.png" class="icon" alt="icon"></div></a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -32,18 +43,40 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="" target="_blank"><img src="img/facebook.png" alt="fb"></a></li>
-            <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitter" style="margin-top:-8px;"></a></li>
+            <li><a href="" target="_blank"><img src="img/facebook.png" alt="fb" style="margin-top:-4px;"></a></li>
+            <li><a href="" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
           </ul>
         </div>
       </div>
 </div>
+<div class="row" id="main">
+<div class="col-sm-12">
 <div class="row">
-    <div style="margin-top:60px;" class="col-sm-12" style=" position:relative;">
+    <div style="margin-top:60px; width:100%; position:relative;" class="col-sm-12">
         <div class="sydney"><img src="img/sydney2.jpg" style="width:auto;" alt="sydney"></div>
-        <div id="section_over" class="layer"><b><h2>Commute</h2>Unexpected delays are just a fact of life whether you are traveling to work or picking up kids from school. Commute is the simple and intuitive way to travel, giving users the power to not only plan ahead, but make smart decisions on the fly about how to leave and get to their destination.</div>
-        <div id="section_over" class="layer2"><img src="img/iphoneWithApp.png" alt="phone"></div>
+            <div id="vision">
+            <div class="layer" style="font-size:24px;width:70%;"><b style="font-size:36px;line-height:10px;">Commute</b><br/><br/>Unexpected delays are just a fact of life whether you are traveling to work or picking up kids from school. Commute is the simple and intuitive way to travel, giving users the power to not only plan ahead, but make smart decisions on the fly about how to leave and get to their destination.<br/><button style="margin-top:25px;" class="btn btn-primary"><img src="img/apple.png" alt="apple"> Download on the App Store</button></div>
+            <div style="width:30%;" class="layer2"><img style="margin-left:30px"; src="img/iphoneWithApp.png" alt="phone"></div>
+            </div>
     </div>
+</div>
+<div class="row plain" style="clear:both; padding:30px; text-align:center;">
+    <div class="col-sm-12"><h3>Commute has a number of great features to optimise your journey</h3></div>
+</div>
+<div class="row" style="padding:0px 40px 40px 40px; text-align:center;">
+    <div class="col-sm-4"><h4>Self-Suffient Alarm Clock</h4><div class="feature"></div><div class="feature-text">Commute will maximise sleep and minimise fatigue by adjusting the alarm clock to consider traffic events and congestion. Simply, set the time at destination and time required to get ready. </div></div>
+    <div class="col-sm-4"><h4>Time Comparsion of Transport Options</h4><div class="feature"></div><div class="feature-text">Time comparsions will simplify the decision-making process of choosing a transport medium. Select the optimal transport option to avoid traffic delays and ensure on time arrival.</div></div>
+    <div class="col-sm-4"><h4>Self Learning</h4><div class="feature"></div><div class="feature-text">No need to enter extensive infomration. Commute heightens the user experience by learning travel preferences to deliever an interface talioed to suit people's lifestyles.</div></div>
+</div>
+<div class="row">
+    <div style="margin-top:60px;position:relative;" class="col-sm-12">
+        <div id="section_over" class="layer" style="font-size:24px; width:100%;text-align:center; background-color:#4a71ba; height:200px; padding-top:85px;">Overcome delays and traffic congestion each and every day.</div>
+    </div>
+</div>
+<div class="row" style="margin-top:200px;">
+    <div class="col-sm-12 footer"> Copyright&#169; | All rights reserved | <a>Terms of Service</a> | <a>Privacy Policy</a></div>
+</div>
+</div>
 </div>
 </body>
 </html>
