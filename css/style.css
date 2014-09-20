@@ -88,11 +88,6 @@ body
 /* iPhone [portrait + landscape] */
 @media only screen and (max-device-width: 480px) 
 {
-	.layer
-    {
-        font-size:10px;
-        width:100%;
-    }
 
     .footer
     {
@@ -102,6 +97,12 @@ body
     .layer2
     {
         display:none;    
+    }
+    
+    .layer
+    {
+        font-size:10px;
+        width:100%;
     }
 }
 
