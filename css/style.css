@@ -107,7 +107,8 @@ and (max-device-width : 480px) {
     
     #mainText
     {
-        display:none;
+        font-size:12px;
+        width:100%;
     }
 }
 
