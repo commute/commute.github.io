@@ -104,5 +104,11 @@ body
         font-size:10px;
         width:100%;
     }
+    
+    #mainText
+    {
+        font-size:12px;
+        width:100%;
+    }
 }
 
