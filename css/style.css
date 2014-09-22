@@ -60,7 +60,7 @@ body
     border-radius:10px;
     display:block;
     overflow:hidden;
-    width:100%;
+    max-width:100%;
 }
 
 .layer
