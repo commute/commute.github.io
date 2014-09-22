@@ -53,6 +53,11 @@ body
     
 }
 
+.feature-img
+{
+    max-width:100%;
+}
+
 .feature
 {
     background-color:grey;
@@ -60,7 +65,6 @@ body
     border-radius:10px;
     display:block;
     overflow:hidden;
-    max-width:100%;
 }
 
 .layer
