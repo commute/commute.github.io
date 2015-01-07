@@ -19,6 +19,22 @@
             $("#vision").css("width", x + " px");
 });
     </script>
+    <script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top - 30
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" style="height:60px; padding-top:10px;">
@@ -34,10 +50,10 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li>
-              <a href="support.html">Support</a>
+              <a href="#features">Features</a>
             </li>
             <li>
-              <a href="">CodeWorks Presentation</a>
+              <a href="#support">Support</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -58,7 +74,7 @@
             </div>
     </div>
 </div>
-<div class="row plain" style="clear:both; padding:30px; text-align:center;">
+<div id="features" class="row plain" style="clear:both; padding:30px; text-align:center;">
     <div class="col-sm-12"><h3>Commute has a number of great features to optimise your journey</h3></div>
 </div>
 <div class="row" style="padding:0px 40px 40px 40px; text-align:center;">
@@ -66,15 +82,61 @@
     <div class="col-sm-4 col-xs-12 "><h4>Travel Comparisons</h4><div class="feature"><img src="img/Screen%20Shot%202014-09-21%20at%2012.17.46%20pm.png" alt="snooze"></div><div class="feature-text">Time comparisons will simplify the decision-making process of choosing a transport medium. Select the optimal transport option to avoid traffic delays and ensure on time arrival..</div></div>
     <div class="col-sm-4 col-xs-12 "><h4>Self-Learning</h4><div class="feature"><img src="img/Screen%20Shot%202014-09-21%20at%201.37.19%20pm.png" alt="snooze"></div><div class="feature-text">No need to enter extensive information. Commute heightens the user experience by learning travel preferences to deliver an interface tailored to suit people's lifestyles.</div></div>
 </div>
+<div id="support" class="row">
+<div class="col-sm-12">
+    <div style="margin-top:60px;">
+        <div class="sydney" style="position:relative;"><img src="img/sydney2.jpg" style="width:auto;" alt="sydney"></div>
+            <div class="support_layer" style="font-size:24px"><b style="font-size:36px;line-height:10px;">Have a question or suggestion?</b><br/><br/>The app team are keen to hear from you and answer any support questions.<br/><br/>
+                 <form role="form" class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Full Name</label>
+                    <div class="col-sm-10">
+                    <input type="text" name="name" class="form-control" required="required"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" required="required"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Category</label>
+                    <div class="col-sm-10">
+                    <select class="form-control">
+                        <option>Support</option>
+                        <option>Suggestion</option>
+                        <option>Other</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Comment</label>
+                    <div class="col-sm-10">
+                    <textarea name="comment" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-5"> <!--Empty Div so button is always centered with bootstrap-->
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="submit" class="btn btn-primary log-in-button" value="Submit"/>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+</div>
+</div>
 <div class="row">
-    <div style="margin-top:60px;position:relative;" class="col-sm-12">
-        <div id="section_over" class="layer" style="font-size:24px; width:100%;text-align:center; background-color:#4a71ba; height:200px; padding-top:85px;"><b>Commute.</b>Overcome delays and traffic congestion each and every day.</div>
+    <div style="margin-top:30px;position:relative;" class="col-sm-12">
+        <div id="section_over" class="layer" style="font-size:24px; width:100%;text-align:center; background-color:#4a71ba; height:200px; padding-top:85px;"><b>Commute.</b>The Simple and Intuitive way to Travel</div>
     </div>
 </div>
-<div class="row" style="margin-top:200px;">
-    <div class="col-sm-12 footer"> Copyright&#169; | All rights reserved | <a>Terms of Service</a> | <a>Privacy Policy</a></div>
-</div>
-</div>
+<div class="row" style="margin-top:200px;padding-left:15px;">
+    <div class="col-sm-12 footer">Copyright&#169; | All rights reserved | <a>Terms of Service</a> | <a>Privacy Policy</a></div>
 </div>
 </body>
 </html>

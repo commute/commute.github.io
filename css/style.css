@@ -55,7 +55,7 @@ body
 
 .feature
 {
-    background-color:grey;
+    background-color:#fcfcfc; /*grey*/
     height:300px;
     border-radius:10px;
     display:block;
