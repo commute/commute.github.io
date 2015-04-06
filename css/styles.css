@@ -1,0 +1,237 @@
+.banner
+{
+   height:600px;
+   background-image: url("/testImages/sydney.jpg")
+}
+
+#supportButton
+{
+    cursor:pointer;
+}
+
+h4
+{
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.bannerText
+{
+   color:white;
+    font-size:24px;
+}
+
+h3
+{
+    text-align:center;
+}
+.blue
+{
+    height:30px;
+    background-color: #496fba;
+}
+.icon
+{
+   border-radius:10px;
+    margin-top:-15px;
+}
+
+.navbar-toggle
+{
+        border: 1px solid black;
+}
+
+body
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.galleryImage
+{
+    -webkit-filter: grayscale(0.9);
+}
+
+.galleryImage:hover
+{
+    -webkit-filter: grayscale(0.0);
+    cursor:pointer;
+}
+
+.cap
+{
+    text-align: center;
+    font-size:16px;
+}
+
+#nav_mobile
+{
+ display:none;   
+}
+
+/*h2
+{
+    padding: 10px 0px 10px 30px;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-size:24px;
+    font-weight:bold;
+}*/
+
+#about
+{
+    /*background-color:#101010;
+    color:white;*/
+    margin-top:20px;
+}
+
+#info
+{
+    padding: 20px 50px 20px 50px;
+    line-height: 30px;
+    text-align: justify;
+    font-size:20px;
+}
+
+/*Image Slider*/
+#owl-demo .item{
+  margin: 12px;
+}
+
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+border-radius: 6px;
+}
+
+/*Bootstrap Changes*/
+body
+{
+    margin:0px;
+    padding:0px;
+    /*font-size:20px;*/
+}
+
+.navbar {
+  background-color: white; 
+   /*background: transparent;*/
+}
+
+.navbar-brand
+{
+    font-size:30px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+{
+    padding:0px;
+}
+
+
+/***********OWL**************/
+
+
+.owl-theme .owl-controls .owl-buttons div {
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 18px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #101010;
+    filter: Alpha(Opacity=60);
+    opacity: 0.8;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 25px;
+  top: 200px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 25px;
+  top: 200px;
+}
+
+/******CSS for Different Devices***********/
+
+@media screen and (max-width: 768px)
+{
+    .navbar {
+   /*background-color: rgba(0,0,0,1);*/
+    margin-bottom:0px;
+    }
+    
+   /* #nav_mobile
+    {
+     display:block;   
+    }
+    
+    #nav_desktop
+    {
+     display:none;   
+    }*/
+    
+    #info
+    {
+        font-size:14px;
+        padding: 10px 30px 10px 30px;
+    }
+    
+    h2
+    {
+        font-size:18px;
+    }
+    
+    .galleryImage
+    {
+        -webkit-filter: grayscale(0.0);
+        /*width:70%;*/
+    }
+    
+    .navbar-brand
+    {
+        font-size:24px;
+    }
+    
+    #phone
+    {
+        display:none;
+    }
+    
+    .bannerText
+    {
+    font-size:18px;
+    }
+    
+    .bannerText
+    {
+        text-align:center;
+    }
+    
+    h4
+    {
+        text-align:center;
+    }
+    
+    .banner
+    {
+        height:400px;
+    }
+    
+    #copyright
+    {
+        display:none;
+    }
+}
+
+
